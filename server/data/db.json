@@ -1,0 +1,97 @@
+{
+  "users": [
+    {
+      "id": "00000000-0000-0000-0000-000000000001",
+      "name": "Demo User",
+      "email": "user@example.com",
+      "passwordHash": "$2b$10$g4aB.22pn26GqEnGtbxhTe5g02LmldYeS6KX4bhSPclLhJmU8dM8q",
+      "role": "user",
+      "createdAt": "2026-04-27T00:00:00.000Z"
+    },
+    {
+      "id": "00000000-0000-0000-0000-000000000002",
+      "name": "Demo Admin",
+      "email": "admin@example.com",
+      "passwordHash": "$2b$10$KeGMkApZLbOxtYwcILREj.0tq.pENV4XbxMASNu5tdk95ElUpbNVi",
+      "role": "superadmin",
+      "createdAt": "2026-04-27T00:00:00.000Z"
+    },
+    {
+      "id": "cb5f5ca9-4306-457b-b2ca-1ac4ff350c70",
+      "name": "meltem",
+      "email": "meltem@gmail.com",
+      "passwordHash": "$2b$10$ciSZQJTAH73SlqwCSD5R3Oazr8s3/WoEx/C38NckgtLexQZ01zXiu",
+      "role": "user",
+      "createdAt": "2026-04-26T15:49:22.296Z"
+    },
+    {
+      "id": "8d5cec17-ea7d-49eb-a587-50ec0c8d2420",
+      "name": "Super Admin",
+      "email": "admin@azercell.com",
+      "passwordHash": "$2b$10$B1zq8ZktYq09OIs3grbODeyZBvFOzQekjm17t0o8WbppfOECdzMp6",
+      "role": "superadmin",
+      "createdAt": "2026-04-26T15:38:30.033Z"
+    },
+    {
+      "id": "fd3951c4-eedc-41d7-b86c-4f64df118c93",
+      "name": "nihat",
+      "email": "nihat@gmail.com",
+      "passwordHash": "$2b$10$bgrqhVMn8OTiAudkyjN.G.1cqKAsTlZY/58buCvQ9effdA2TxPztO",
+      "role": "user",
+      "createdAt": "2026-04-26T15:35:44.194Z"
+    }
+  ],
+  "numbers": [
+    {
+      "id": "d4809c1e-a11c-42c1-a4c8-47d0caa25846",
+      "phoneNumber": "+994055528374",
+      "status": "scam",
+      "riskScore": 99,
+      "carrier": "Unknown Carrier",
+      "source": "System",
+      "totalLookups": 2,
+      "reportCount": 2,
+      "reportRiskPercentage": 20,
+      "scamReportPercentage": 0,
+      "blockedCount": 0,
+      "lastCheckedAt": null,
+      "lastUpdated": "2026-04-26T15:50:40.725Z",
+      "createdAt": "2026-04-26T15:46:44.250Z"
+    },
+    {
+      "id": "c1da400c-f172-4f84-80b9-c877210ddc16",
+      "phoneNumber": "+994555387345",
+      "status": "safe",
+      "riskScore": 0,
+      "carrier": "Bakcell",
+      "source": "System",
+      "totalLookups": 1,
+      "reportCount": 1,
+      "reportRiskPercentage": 10,
+      "scamReportPercentage": 0,
+      "blockedCount": 0,
+      "lastCheckedAt": null,
+      "lastUpdated": "2026-04-26T15:50:45.693Z",
+      "createdAt": "2026-04-26T15:44:15.320Z"
+    },
+    {
+      "id": "3e0e3818-3bf0-44dc-89cf-2a72787ad0d8",
+      "phoneNumber": "+994555387343",
+      "status": "scam",
+      "riskScore": 99,
+      "carrier": "Bakcell",
+      "source": "System",
+      "totalLookups": 0,
+      "reportCount": 0,
+      "reportRiskPercentage": 0,
+      "scamReportPercentage": 0,
+      "blockedCount": 0,
+      "lastCheckedAt": null,
+      "lastUpdated": "2026-04-26T15:44:06.963Z",
+      "createdAt": "2026-04-26T15:44:06.971Z"
+    }
+  ],
+  "reports": [],
+  "activity": [],
+  "userBlocks": []
+}
