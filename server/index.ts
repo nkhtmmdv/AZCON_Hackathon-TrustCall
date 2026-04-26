@@ -137,6 +137,18 @@ app.post('/api/auth/login', rateLimit(15 * 60 * 1000, 20), async (req, res) => {
   if (!body.success) return res.status(400).json({ error: 'Invalid input' });
 
   const email = normalizeEmail(body.data.email);
+
+  // Demo users fallback (works even if db.json is read-only)
+  const DEMO_USERS = [
+    { id: 'demo-user-001', name: 'Demo User', email: 'user@example.com', password: 'password', role: 'user' as const },
+    { id: 'demo-admin-001', name: 'Demo Admin', email: 'admin@example.com', password: 'password', role: 'superadmin' as const },
+  ];
+  const demoUser = DEMO_USERS.find(u => u.email === email);
+  if (demoUser && body.data.password === demoUser.password) {
+    const token = signToken({ userId: demoUser.id, email: demoUser.email, role: demoUser.role });
+    return res.json({ token, user: { id: demoUser.id, name: demoUser.name, email: demoUser.email, role: demoUser.role } });
+  }
+
   const db = await readDb();
   const user = db.users.find((u) => normalizeEmail(u.email) === email);
   if (!user) return res.status(401).json({ error: 'Invalid credentials' });
@@ -501,4 +513,3 @@ ensureSchemaAndSeed()
     console.error('Failed to start API:', e);
     process.exit(1);
   });
-
