@@ -35,7 +35,7 @@ Built for subscribers in Azerbaijan, TrustCall addresses the growing problem of 
 
 | Layer | Technology |
 |-------|-----------|
-| Frontend | React 18, TypeScript |
+| Frontend | React 19, TypeScript |
 | Build Tool | Vite |
 | Styling | Tailwind CSS v4 |
 | Animations | Framer Motion |
